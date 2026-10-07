@@ -50,7 +50,8 @@ Sait Ramazan Gülbay ("biz") yayımlar. Aynı uygulama diğer dillerde Chalkline
 uygulamaya girdiğiniz bilgilere ne olduğunu açıklar.</p>
 <h2 id="kisaca">Kısaca</h2>
 <ul>
-<li>Hiçbir kişisel veri toplamayız. Hesap, oturum açma ya da bize ait bir sunucu yoktur.</li>
+<li>Uygulama hiçbir kişisel veri toplamaz. Hesap, oturum açma ya da bize ait bir sunucu yoktur. Bize
+e-posta yazarsanız yalnız yazdıklarınız bize ulaşır ("Bize yazarsanız" bölümüne bakın).</li>
 <li>Uygulamada reklam, analiz aracı ve izleme yoktur.</li>
 <li>Fotoğraflarınız, işleriniz, müşterileriniz ve raporlarınız iPhone'unuzda; uygulama için iCloud'u
 açtıysanız kendi iCloud hesabınızda durur. Bunları göremeyiz, bunlara erişemeyiz.</li>
@@ -59,7 +60,7 @@ açtıysanız kendi iCloud hesabınızda durur. Bunları göremeyiz, bunlara eri
 <p>Ustaca'ya neyin gireceğine siz karar verirsiniz. Bunlar şunlar olabilir:</p>
 <ul>
 <li>iş fotoğrafları; her fotoğrafın çekildiği tarih, saat, saat dilimi, konum ve adres, orijinal dosyanın
-SHA-256 parmak izi, açıklamalarınız, etiketleriniz ve çizimleriniz;</li>
+SHA-256 parmak izi, açıklamalarınız, etiketleriniz ve işaretlemeleriniz;</li>
 <li>işler: başlık, adres, konum, aşama, tarihler ve notlar;</li>
 <li>müşteriler: ad, telefon numarası, e-posta adresi, posta adresi, mesaj dili, notlar ve müşterinin
 bilgilendirme almayı kabul ettiği tarih;</li>
@@ -94,26 +95,54 @@ uygulama, koordinatları Apple'ın adres bulma hizmetine gönderir. Apple bu ist
 Politikası kapsamında işler; bize hiçbir şey ulaşmaz.</li>
 <li><strong>Satın almalar (App Store):</strong> abonelikleri Apple satar ve ücretlendirir. Adınız, ödeme bilgileriniz ya
 da Apple Hesabınız bize ulaşmaz. Uygulama abonelik durumunuzu iPhone'unuzda denetler.</li>
-<li><strong>Mesajlar:</strong> bir müşteriye bilgilendirme gönderdiğinizde uygulama WhatsApp, Mesajlar ya da Mail'i
-metin yazılmış olarak açar; mesajı siz gönderirsiniz. Bu mesajları o uygulamalar kendi koşulları
-kapsamında iletir. Ustaca arka planda hiçbir zaman mesaj göndermez.</li>
+<li><strong>Mesajlar, aramalar ve yol tarifi:</strong> bir müşteriye bilgilendirme gönderdiğinizde uygulama WhatsApp,
+Mesajlar ya da Mail'i (Mail'de hesap yoksa varsayılan e-posta uygulamanızı) metin yazılmış olarak açar;
+mesajı siz gönderirsiniz. Müşteri kartında Ara, Telefon uygulamasını müşterinin numarasıyla; Yol
+Tarifi, Apple Haritalar'ı müşterinin adresiyle açar. Mesajlarınızı, aramalarınızı ve rotalarınızı bu
+uygulamalar kendi koşulları kapsamında işler. Ustaca arka planda hiçbir zaman mesaj göndermez, arama
+yapmaz.</li>
 <li><strong>Paylaşım:</strong> raporlar, fotoğraflar ve dışa aktarılan dosyalar uygulamadan yalnız siz iOS paylaşım
-sayfasıyla, seçtiğiniz uygulamaya ya da kişiye paylaştığınızda çıkar.</li>
-<li><strong>Spotlight:</strong> müşteri adları ve iletişim bilgileri iPhone aramasında görünebilir. Bu dizin iPhone'unuzda
-kalır. Uygulamanın Ayarlar bölümünden kapatabilirsiniz.</li>
+sayfasıyla, seçtiğiniz uygulamaya ya da kişiye paylaştığınızda çıkar. Paylaşmadan önce dosyanın neler
+içerdiğini bilin: orijinal fotoğraflar EXIF verisini, yani GPS konumunu ve çekildiği tarih ile saati
+taşır; damgalı kopyalar (Pro) tarihi, saati ve adresi görselin üzerinde gösterir; raporlarda işin
+adresi ile her fotoğrafın tarihi, saati ve adresi yer alır; ZIP dışa aktarma, orijinal fotoğrafları ve
+işin müşterisinin ya da tüm verileri dışa aktardığınızda bütün müşterilerinizin bilgilerini (ad,
+telefon, e-posta, adres ve notlar) içeren bir <code>metadata.json</code> dosyasını kapsar.</li>
+<li><strong>Spotlight:</strong> müşterilerinizi iPhone aramasında bulabilmeniz için uygulama her müşterinin adını,
+telefon numarasını, e-posta adresini ve posta adresini iPhone'unuzdaki arama dizinine ekler. İşler ve
+notlar eklenmez. Dizin iPhone'unuzda kalır, bize hiçbir zaman gönderilmez. Bu ayar başlangıçta açıktır;
+müşterilerinizi dizinden kaldırmak için uygulamanın Ayarlar bölümünde "Müşteri Kayıtlarını Spotlight’ta
+Göster" anahtarını kapatın.</li>
+<li><strong>Siri, Kestirmeler ve denetimler:</strong> "İş Fotoğrafı Çek" eylemi Siri, Kestirmeler uygulaması, Spotlight,
+Eylem düğmesi ve Denetim Merkezi ya da Kilit Ekranı denetimiyle çalışır. Bir kestirme için iş seçerken
+Kestirmeler uygulaması işlerinizin başlıklarını ve adreslerini iPhone'unuzdan okuyarak gösterir; bunlar
+bize gönderilmez. Eylem yalnız uygulamada kamerayı açar. Siri isteklerini Apple kendi Gizlilik
+Politikası kapsamında işler; bize hiçbir şey ulaşmaz.</li>
 </ul>
 <h2 id="cokme-raporlari">Çökme raporları</h2>
 <p>iOS Ayarlar uygulamasında analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiyseniz Apple,
 anonimleştirilmiş çökme raporlarını ve kullanım istatistiklerini bizimle paylaşabilir. Bu özelliği Apple
 yönetir; Ayarlar → Gizlilik ve Güvenlik altındaki analiz ayarlarından dilediğiniz zaman kapatabilirsiniz.
 Uygulamanın kendisinde analiz ya da çökme raporlama kodu yoktur.</p>
+<h2 id="bize-yazarsaniz">Bize yazarsanız</h2>
+<p>Destek adresimize yazarsanız e-posta adresiniz, e-postanızda görünüyorsa adınız, iletiniz ve varsa ekleri
+bize ulaşır. Bunları yalnız size yanıt vermek için kullanırız (yanıt vermekteki meşru menfaatimiz: KVKK
+m. 5/2-f, GDPR m. 6/1-f, LGPD m. 7/IX). Yalnız bunun için gerektiği kadar, yasa gerektiriyorsa daha uzun
+saklarız ve istediğinizde sileriz. E-postalar e-posta sağlayıcımızda (Google Gmail) durur; sağlayıcı
+bunları ülkeniz dışındaki sunucularda saklayabilir. Bu e-postaların veri sorumlusu biziz; bunlara
+erişmeyi, düzeltilmelerini ya da silinmelerini isteyebilirsiniz. Bize yazmak uygulamanın dışında
+gerçekleşir; bu yüzden uygulamanın App Store'daki gizlilik etiketi ("Veri Toplanmıyor") doğru kalır.
+Sorununuzu çözmek için gerekmedikçe müşteri bilgisi ya da fotoğraf göndermeyin.</p>
 <h2 id="musterilerinizin-verileri">Müşterilerinizin verileri</h2>
 <p>Girdiğiniz müşteri bilgileri işletmenize aittir. Veri koruma mevzuatı açısından bu verilerden siz
 sorumlusunuz (örneğin KVKK'ya göre "veri sorumlusu", GDPR'a göre "controller", LGPD'ye göre "controlador"
 olarak). Bu verilere erişmeyiz ve bunları sizin adınıza işlemeyiz. Müşterilerinize bilgilendirme
 göndermeden önce onlardan onay alın; uygulama, onay verdikleri tarihi kaydetmenizi sağlar. Verilerinizi
 dilediğiniz zaman dışa aktarabilir ya da bir müşteriyi silebilirsiniz; müşteri silindiğinde kişisel
-bilgileri ve kendisine gönderilen bilgilendirmelerin metinleri de silinir.</p>
+bilgileri ve kendisine gönderilen bilgilendirmelerin metinleri de silinir. iCloud eşitleme açıksa Apple
+bu verileri iCloud hesabınızda saklar ve Amerika Birleşik Devletleri dahil başka ülkelerdeki sunucularda
+tutabilir. Veri sorumlusu olarak bunun işinize uyup uymadığına siz karar verir, yasa gerektiriyorsa
+müşterilerinizi bilgilendirirsiniz.</p>
 <h2 id="verilerinizin-saklanmasi-ve-silinmesi">Verilerinizin saklanması ve silinmesi</h2>
 <p>Verileriniz siz silene kadar kalır. Fotoğrafları, işleri ve müşterileri tek tek silebilir ya da uygulamanın
 Ayarlar bölümündeki tüm verileri silme seçeneğini kullanabilirsiniz. iCloud açıksa silme işlemi iCloud'unuza
@@ -124,17 +153,19 @@ dosyası olarak dışa aktarabilirsiniz.</p>
 <p>iPhone'unuzdaki veriler iOS veri koruması ve cihaz parolanızla korunur. Apple, iCloud verilerini aktarım
 sırasında ve kendi sunucularında şifreler.</p>
 <h2 id="haklariniz-ve-bolgesel-notlar">Haklarınız ve bölgesel notlar</h2>
-<p>Kişisel verilerinizden hiçbirini toplamadığımız ve saklamadığımız için erişiminize açacağımız, düzelteceğimiz,
-sileceğimiz, aktaracağımız ya da satacağımız bir veri yoktur. Denetim tamamen sizdedir: uygulamada ve Apple
-Hesabınızda.</p>
+<p>Bize gönderdiğiniz e-postalar ("Bize yazarsanız") dışında kişisel verilerinizden hiçbirini toplamadığımız
+ve saklamadığımız için erişiminize açacağımız, düzelteceğimiz, sileceğimiz, aktaracağımız ya da
+satacağımız bir veri yoktur. Denetim tamamen sizdedir: uygulamada ve Apple Hesabınızda.</p>
 <ul>
-<li><strong>Avrupa Birliği ve Birleşik Krallık (GDPR, UK GDPR):</strong> kişisel verilerinizi veri sorumlusu ya da veri
-işleyen olarak işlemeyiz. App Store ve iCloud verilerinden Apple sorumludur.</li>
-<li><strong>Türkiye (KVKK, 6698 sayılı Kanun):</strong> kişisel verilerinizi veri sorumlusu olarak işlemeyiz.</li>
-<li><strong>Brezilya (LGPD, 13.709/2018 sayılı Kanun):</strong> kişisel verilerinizi kontrolör (controlador) ya da işleyen
-(operador) olarak işlemeyiz.</li>
-<li><strong>Kaliforniya (CPRA ile değiştirilmiş CCPA):</strong> kişisel bilgi toplamayız, satmayız, paylaşmayız ve hedefli
-reklam için kullanmayız.</li>
+<li><strong>Avrupa Birliği ve Birleşik Krallık (GDPR, UK GDPR):</strong> uygulamadaki kişisel verileri veri sorumlusu ya
+da veri işleyen olarak işlemeyiz; yalnız bize gönderdiğiniz e-postaların veri sorumlusuyuz. App Store
+ve iCloud verilerinden Apple sorumludur.</li>
+<li><strong>Türkiye (KVKK, 6698 sayılı Kanun):</strong> uygulamadaki kişisel verileri veri sorumlusu olarak işlemeyiz;
+yalnız bize gönderdiğiniz e-postaların veri sorumlusuyuz.</li>
+<li><strong>Brezilya (LGPD, 13.709/2018 sayılı Kanun):</strong> uygulamadaki kişisel verileri kontrolör (controlador) ya
+da işleyen (operador) olarak işlemeyiz; yalnız bize gönderdiğiniz e-postaların kontrolörüyüz.</li>
+<li><strong>Kaliforniya (CPRA ile değiştirilmiş CCPA):</strong> kişisel bilgi satmayız, paylaşmayız ve hedefli reklam
+için kullanmayız; uygulama da kişisel bilgi toplamaz.</li>
 </ul>
 <p>Bir sorunuz ya da talebiniz varsa bize e-posta gönderin, yanıt veririz.</p>
 <h2 id="cocuklar">Çocuklar</h2>

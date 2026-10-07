@@ -50,8 +50,9 @@ Sait Ramazan Gülbay („wir“, „uns“) herausgegeben. Auf Türkisch heißt 
 beschreibt, was mit den Informationen geschieht, die Sie in die App eingeben.</p>
 <h2 id="das-wichtigste-in-kurze">Das Wichtigste in Kürze</h2>
 <ul>
-<li>Wir erheben keine personenbezogenen Daten. Es gibt kein Konto, keine Anmeldung und keinen Server von
-uns.</li>
+<li>Die App erhebt keine personenbezogenen Daten. Es gibt kein Konto, keine Anmeldung und keinen Server von
+uns. Wenn Sie uns eine E-Mail schreiben, erhalten wir nur, was Sie senden (siehe „Wenn Sie uns
+schreiben“).</li>
 <li>Die App enthält keine Werbung, keine Analysefunktionen und kein Tracking.</li>
 <li>Ihre Fotos, Aufträge, Kunden und Berichte bleiben auf Ihrem iPhone und, wenn Sie iCloud für die App
 aktivieren, in Ihrem eigenen iCloud-Account. Wir können sie weder einsehen noch darauf zugreifen.</li>
@@ -59,9 +60,9 @@ aktivieren, in Ihrem eigenen iCloud-Account. Wir können sie weder einsehen noch
 <h2 id="informationen-die-sie-in-der-app-speichern">Informationen, die Sie in der App speichern</h2>
 <p>Sie entscheiden, was in Chalkline gespeichert wird. Dazu können gehören:</p>
 <ul>
-<li>Auftragsfotos mit Datum, Uhrzeit, Zeitzone, Standort und Adresse der Aufnahme, einem
-SHA-256-Fingerabdruck des Originals sowie Ihren Bildbeschreibungen, Kennzeichnungen und Markierungen;</li>
-<li>Aufträge: Titel, Adresse, Standort, Phase, Datumsangaben und Notizen;</li>
+<li>Auftragsfotos mit Datum, Uhrzeit, Zeitzone, Standort und Adresse der Aufnahme, einer
+SHA-256-Prüfsumme des Originals sowie Ihren Bildtexten, Markierungen und Anmerkungen;</li>
+<li>Aufträge: Titel, Adresse, Standort, Status, Datumsangaben und Notizen;</li>
 <li>Kunden: Name, Telefonnummer, E-Mail-Adresse, Postanschrift, Sprache für Nachrichten, Notizen und das
 Datum, an dem ein Kunde eingewilligt hat, Nachrichten zu erhalten;</li>
 <li>Ihr Firmenprofil: Firmen- und Inhabername, Telefon, E-Mail, Registernummer, Gewerk, Logo und Farbe;</li>
@@ -99,28 +100,57 @@ sendet die App die Koordinaten an den Geocoding-Dienst von Apple. Apple verarbei
 der Datenschutzrichtlinie von Apple; wir erhalten nichts.</li>
 <li><strong>Käufe (App Store):</strong> Abonnements werden von Apple verkauft und abgerechnet. Wir erhalten weder Ihren
 Namen noch Ihre Zahlungsdaten oder Ihren Apple Account. Die App prüft Ihren Abostatus auf Ihrem iPhone.</li>
-<li><strong>Nachrichten:</strong> Wenn Sie einem Kunden eine Nachricht senden, öffnet die App WhatsApp, die
-Nachrichten-App oder Mail mit dem bereits eingefügten Text, und Sie senden ihn selbst ab. Diese
-Nachrichten werden von den jeweiligen Apps nach deren eigenen Bedingungen verarbeitet. Chalkline sendet
-niemals Nachrichten im Hintergrund.</li>
+<li><strong>Nachrichten, Anrufe und Routen:</strong> Wenn Sie einem Kunden eine Nachricht senden, öffnet die App
+WhatsApp, die Nachrichten-App oder Mail (bzw. Ihre Standard-E-Mail-App, wenn in Mail kein Account
+eingerichtet ist) mit dem bereits eingefügten Text, und Sie senden ihn selbst ab. In der Kundenkarte
+öffnet „Anrufen“ die Telefon-App mit der Nummer des Kunden und „Route“ Apple Karten mit seiner Adresse.
+Diese Apps verarbeiten Ihre Nachrichten, Anrufe und Routen nach ihren eigenen Bedingungen. Chalkline
+sendet niemals Nachrichten im Hintergrund und ruft niemanden von selbst an.</li>
 <li><strong>Teilen:</strong> Berichte, Fotos und Exporte verlassen die App nur, wenn Sie sie über das Teilen-Menü von
-iOS weitergeben, an die App oder Person Ihrer Wahl.</li>
-<li><strong>Spotlight:</strong> Namen und Kontaktdaten von Kunden können in der iPhone-Suche erscheinen. Dieser Index
-bleibt auf Ihrem iPhone. Sie können ihn in der App unter Einstellungen deaktivieren.</li>
+iOS weitergeben, an die App oder Person Ihrer Wahl. Prüfen Sie vor dem Teilen, was eine Datei enthält:
+Originalfotos behalten ihre EXIF-Daten, darunter den GPS-Standort sowie Datum und Uhrzeit der Aufnahme;
+gestempelte Kopien (Pro) zeigen Datum, Uhrzeit und Adresse im Bild; Berichte zeigen die Auftragsadresse
+sowie Datum, Uhrzeit und Adresse jedes Fotos; ein ZIP-Export enthält die Originalfotos und eine Datei
+<code>metadata.json</code> mit den Daten des Kunden des Auftrags oder, beim Export aller Daten, aller Ihrer Kunden
+(Name, Telefon, E-Mail, Adresse und Notizen).</li>
+<li><strong>Spotlight:</strong> Damit Sie Kunden bei der Suche auf Ihrem iPhone finden, fügt die App Name,
+Telefonnummer, E-Mail-Adresse und Postanschrift jedes Kunden dem Suchindex auf Ihrem iPhone hinzu.
+Aufträge und Notizen werden nicht aufgenommen. Der Index bleibt auf Ihrem iPhone und wird niemals an
+uns übermittelt. Die Einstellung ist standardmäßig aktiviert; deaktivieren Sie in den Einstellungen der
+App „Kunden in Spotlight anzeigen“, um Ihre Kunden aus dem Index zu entfernen.</li>
+<li><strong>Siri, Kurzbefehle und Steuerelemente:</strong> Die Aktion „Auftragsfoto aufnehmen“ funktioniert mit Siri,
+der Kurzbefehle-App, Spotlight, der Aktionstaste und einem Steuerelement im Kontrollzentrum oder auf
+dem Sperrbildschirm. Wenn Sie für einen Kurzbefehl einen Auftrag auswählen, zeigt die Kurzbefehle-App
+die Titel und Adressen Ihrer Aufträge an, gelesen von Ihrem iPhone; sie werden nicht an uns
+übermittelt. Die Aktion öffnet nur die Kamera in der App. Siri-Anfragen verarbeitet Apple gemäß der
+Datenschutzrichtlinie von Apple; wir erhalten nichts.</li>
 </ul>
 <h2 id="absturzberichte">Absturzberichte</h2>
 <p>Wenn Sie in der Einstellungen-App von iOS festgelegt haben, Analysedaten mit App-Entwicklern zu teilen,
 kann Apple anonymisierte Absturzberichte und Nutzungsstatistiken mit uns teilen. Apple steuert diese
 Funktion, und Sie können sie jederzeit unter Einstellungen → Datenschutz &amp; Sicherheit → Analyse &amp;
 Verbesserungen deaktivieren. Die App selbst enthält keinen Code für Analysen oder Absturzberichte.</p>
+<h2 id="wenn-sie-uns-schreiben">Wenn Sie uns schreiben</h2>
+<p>Wenn Sie an unsere Support-Adresse schreiben, erhalten wir Ihre E-Mail-Adresse, Ihren Namen, sofern Ihre
+E-Mail ihn anzeigt, Ihre Nachricht und etwaige Anhänge. Wir verwenden sie nur, um Ihnen zu antworten
+(unser berechtigtes Interesse an der Antwort: Art. 6 Abs. 1 lit. f DSGVO, Art. 5 Abs. 2 lit. f KVKK, Art.
+7 IX LGPD). Wir bewahren sie nur so lange auf, wie es dafür nötig ist, länger nur, wenn das Gesetz es
+verlangt, und löschen sie auf Ihre Bitte. Die E-Mails liegen bei unserem E-Mail-Anbieter (Google Gmail),
+der sie auf Servern außerhalb Ihres Landes speichern kann. Für diese E-Mails sind wir Verantwortlicher;
+Sie können Auskunft, Berichtigung oder Löschung verlangen. Der E-Mail-Kontakt findet außerhalb der App
+statt, daher bleibt die Datenschutzangabe der App im App Store, „Keine Daten erfasst“, zutreffend. Bitte
+senden Sie uns keine Kundendaten oder Fotos, außer wir benötigen sie zur Lösung Ihres Problems.</p>
 <h2 id="die-daten-ihrer-kunden">Die Daten Ihrer Kunden</h2>
 <p>Die Kundendaten, die Sie eingeben, gehören zu Ihrem Unternehmen. Nach den Datenschutzgesetzen sind Sie
 dafür verantwortlich (zum Beispiel als „Verantwortlicher“ im Sinne der DSGVO, als „veri sorumlusu“ nach
 dem KVKK oder als „controlador“ nach dem LGPD). Wir greifen nicht auf diese Daten zu und verarbeiten sie
 nicht in Ihrem Auftrag. Bitte fragen Sie Ihre Kunden, bevor Sie ihnen Nachrichten senden; in der App
 können Sie das Datum ihrer Einwilligung festhalten. Sie können Ihre Daten jederzeit exportieren oder
-einen Kunden löschen; beim Löschen eines Kunden werden seine personenbezogenen Daten und die Texte der
-an ihn gesendeten Nachrichten entfernt.</p>
+einen Kunden löschen; beim Löschen eines Kunden werden seine personenbezogenen Daten und die Texte der an
+ihn gesendeten Nachrichten entfernt. Ist die iCloud-Synchronisierung aktiviert, speichert Apple diese
+Daten in Ihrem iCloud-Account und kann sie auf Servern in anderen Ländern, auch in den USA, ablegen. Als
+Verantwortlicher entscheiden Sie, ob das für Ihr Unternehmen passt, und informieren Ihre Kunden, wo das
+Gesetz es verlangt.</p>
 <h2 id="aufbewahrung-und-loschung-ihrer-daten">Aufbewahrung und Löschung Ihrer Daten</h2>
 <p>Ihre Daten bleiben gespeichert, bis Sie sie löschen. Sie können einzelne Fotos, Aufträge und Kunden
 löschen oder in der App Einstellungen → Alle Daten löschen verwenden. Wenn iCloud aktiviert ist, gelten
@@ -131,19 +161,21 @@ Ihrem Apple Account → iCloud verwalten. Vor dem Löschen können Sie alles als
 <p>Daten auf Ihrem iPhone sind durch die Datensicherheit von iOS (Data Protection) und Ihren Gerätecode
 geschützt. Apple verschlüsselt iCloud-Daten bei der Übertragung und auf seinen Servern.</p>
 <h2 id="ihre-rechte-und-regionale-hinweise">Ihre Rechte und regionale Hinweise</h2>
-<p>Da wir keine Ihrer personenbezogenen Daten erheben oder speichern, gibt es nichts, worauf wir Ihnen
-Zugang gewähren, was wir berichtigen, löschen, übertragen oder verkaufen könnten. Sie behalten die volle
-Kontrolle in der App und in Ihrem Apple Account.</p>
+<p>Abgesehen von E-Mails, die Sie uns senden (siehe „Wenn Sie uns schreiben“), erheben und speichern wir
+keine Ihrer personenbezogenen Daten. Daher gibt es nichts, worauf wir Ihnen Zugang gewähren, was wir
+berichtigen, löschen, übertragen oder verkaufen könnten. Sie behalten die volle Kontrolle in der App und
+in Ihrem Apple Account.</p>
 <ul>
-<li><strong>Europäische Union und Vereinigtes Königreich (DSGVO, UK-DSGVO):</strong> Wir verarbeiten Ihre
-personenbezogenen Daten weder als Verantwortlicher noch als Auftragsverarbeiter. Für Daten im App Store
-und in iCloud ist Apple verantwortlich.</li>
-<li><strong>Türkei (KVKK, Gesetz Nr. 6698):</strong> Wir verarbeiten Ihre personenbezogenen Daten nicht als
-Verantwortlicher („veri sorumlusu“).</li>
-<li><strong>Brasilien (LGPD, Gesetz Nr. 13.709/2018):</strong> Wir verarbeiten Ihre personenbezogenen Daten weder als
-Verantwortlicher („controlador“) noch als Auftragsverarbeiter („operador“).</li>
-<li><strong>Kalifornien (CCPA in der durch den CPRA geänderten Fassung):</strong> Wir erheben, verkaufen und teilen
-keine personenbezogenen Informationen und nutzen sie nicht für gezielte Werbung.</li>
+<li><strong>Europäische Union und Vereinigtes Königreich (DSGVO, UK-DSGVO):</strong> Wir verarbeiten personenbezogene
+Daten aus der App weder als Verantwortlicher noch als Auftragsverarbeiter; Verantwortlicher sind wir
+nur für E-Mails, die Sie uns senden. Für Daten im App Store und in iCloud ist Apple verantwortlich.</li>
+<li><strong>Türkei (KVKK, Gesetz Nr. 6698):</strong> Wir verarbeiten personenbezogene Daten aus der App nicht als
+Verantwortlicher („veri sorumlusu“); das sind wir nur für E-Mails, die Sie uns senden.</li>
+<li><strong>Brasilien (LGPD, Gesetz Nr. 13.709/2018):</strong> Wir verarbeiten personenbezogene Daten aus der App weder
+als Verantwortlicher („controlador“) noch als Auftragsverarbeiter („operador“); Verantwortlicher sind
+wir nur für E-Mails, die Sie uns senden.</li>
+<li><strong>Kalifornien (CCPA in der durch den CPRA geänderten Fassung):</strong> Wir verkaufen und teilen keine
+personenbezogenen Informationen, nutzen sie nicht für gezielte Werbung, und die App erhebt keine.</li>
 </ul>
 <p>Wenn Sie eine Frage oder ein Anliegen haben, schreiben Sie uns eine E-Mail; wir antworten Ihnen.</p>
 <h2 id="kinder">Kinder</h2>
