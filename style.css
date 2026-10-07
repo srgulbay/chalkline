@@ -1,0 +1,71 @@
+/* Chalkline yasal ve destek sitesi. scripts/yasal_site.py üretir; elle düzenlemeyin. Dış kaynak yok. */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --text: #1d1d1f;
+  --muted: #5c5c63;
+  --rule: #d8d8dd;
+  --surface: #f4f4f6;
+  --link: #a14707;
+  --accent: #f59e0b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161618;
+    --text: #f2f2f7;
+    --muted: #a6a6ae;
+    --rule: #38383d;
+    --surface: #232326;
+    --link: #fbbf24;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 1.0625rem/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--link); text-underline-offset: 0.15em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 1rem; top: 1rem; z-index: 1; padding: 0.5rem 0.75rem; background: var(--bg); }
+header.site { border-bottom: 1px solid var(--rule); }
+.bar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 0.25rem 1.25rem; padding-top: 0.5rem;
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px;
+  color: var(--text); font-weight: 700; text-decoration: none;
+}
+.brand::before { content: ""; width: 0.8rem; height: 0.8rem; border-radius: 0.2rem; background: var(--accent); }
+nav ul { display: flex; flex-wrap: wrap; gap: 0 1.1rem; margin: 0; padding: 0; list-style: none; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+nav a[aria-current] { color: var(--text); font-weight: 600; text-decoration: none; }
+.languages { padding-bottom: 0.4rem; font-size: 0.9375rem; }
+.languages ul { gap: 0 0.9rem; }
+main { padding-top: 2rem; padding-bottom: 3rem; }
+h1 { margin: 0 0 0.5rem; font-size: clamp(1.75rem, 1.25rem + 2.2vw, 2.25rem); line-height: 1.2; letter-spacing: -0.01em; }
+h2 { margin: 2.25rem 0 0.5rem; font-size: 1.3rem; line-height: 1.3; }
+h3, h4, h5, h6 { margin: 1.75rem 0 0.5rem; font-size: 1.1rem; line-height: 1.35; }
+p, ul, ol { margin: 0 0 1rem; }
+main ul, main ol { padding-inline-start: 1.4rem; }
+li { margin: 0.4rem 0; }
+li::marker { color: var(--muted); }
+.updated { margin-bottom: 1.75rem; color: var(--muted); font-size: 0.9375rem; }
+code {
+  padding: 0.1em 0.3em; border-radius: 0.25rem; background: var(--surface);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em;
+}
+hr { margin: 2rem 0; border: 0; border-top: 1px solid var(--rule); }
+footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9375rem; }
+footer.site p { margin: 0; padding: 1.25rem 0 2rem; }
+@media (min-width: 40rem) { body { font-size: 1.125rem; } }
+@media print {
+  .languages, .skip { display: none; }
+  a { color: inherit; }
+}
